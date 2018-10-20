@@ -18,11 +18,10 @@
         <link href="../../use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
         <!-- Plugins-->
         <link href="assets/css/plugins.min.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
         <!-- Template core CSS-->
         <link href="assets/css/template.min.css" rel="stylesheet">
     </head>
-    <section data-spy="scroll" data-target="#navbar-1" data-offset="120">
+    <body data-spy="scroll" data-target="#navbar-1" data-offset="120">
         <nav class="navbar navbar-expand-lg navbar-dark navbar-logo-border fixed-top bg-dark navbar-transparent"><a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="60"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,27 +62,49 @@
             </div>
         </nav>
         <div class="wrapper">
-            <section class="module-cover bg text-center" data-background="" data-overlay="1" data-gradient="1">
+            <section class="module-cover bg-dark text-center" data-background="" data-overlay="1" data-gradient="1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 m-auto">
-                            <div class="mb-4">
-                                <h5 class="text-color">Create a new account</h5>
+                        <div class="col-md-6 m-auto mt-0">
+                            <div>
+                                <h5>Create a new account</h5>
                             </div>
-                            <div class="mb-4">
+                            <div>
                                 <form method="post">
-                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                   
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Telephone">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Pays">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Ville">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-block btn-round btn-brand" type="submit">Sign Up</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <p><small>By signing up, you agree to the <a href="#">terms of service</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active text-color" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Basics Informations</a>
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-color" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Additionals Informations</a>
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
   </li>
- 
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
 </ul>
 <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-      <div class="form-group">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Fisrt Name">
                                     </div>
                                     <div class="form-group">
@@ -97,34 +118,10 @@
                                     </div>
                                     <div class="form-group">
                                         <input class="form-control" type="password" placeholder="Confirm password">
-                                    </div>
-  </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-       <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Phone Number">
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Country">
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="City">
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-block btn-round btn-custom-blue" type="submit">Sign Up</button>
-                                    </div>
-  </div>
-  
+                                    </div></div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 </div>
-                                   
-                                </form>
-                            </div>
-                                
-                        </div>
-                    </div>
-                </div>
-            </section>
-                
-               
             <!-- Footer-->
 
             <footer class="footer bg-dark">
@@ -228,7 +225,7 @@
         </div>
 
         <!-- To top button--><a class="scroll-top" href="#top"><i class="ti-angle-up"></i></a>
-    </section>
+    </body>
     <!-- Scripts-->
     <script src="assets/js/custom/jquery-3.2.1.min.js"></script>
     <script src="assets/js/bootstrap/popper.min.js"></script>
